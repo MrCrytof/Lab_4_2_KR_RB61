@@ -1,13 +1,8 @@
-
 #include <stdio.h>
 #include <windows.h>
 #include "funcs.h"
 
 int main() {
-    // Налаштування кодування консолі для коректного відображення українських символів
-    SetConsoleOutputCP(CP_UTF8);
-    SetConsoleCP(CP_UTF8);
-
     int rows_A = 7; // Задаємо розмірність для варіанта 7 (квадратна матриця 7x7)
     int cols_A = 7;
     int rows_B = 7; // Кількість рядків B дорівнює кількості рядків A для множення
@@ -15,6 +10,7 @@ int main() {
 
     printf("Your variant: 7. Matrix A dimensions: %d x %d\n", rows_A, cols_A);
     printf("Enter the number of columns for rectangular matrix B: ");
+
     scanf("%d", &cols_B);
 
     // Виділення динамічної пам'яті під матриці A та B
